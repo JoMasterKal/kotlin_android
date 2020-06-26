@@ -2,8 +2,8 @@
     <string name="app_name">Kotlin_Android</string>
     <string name="name">Jonathan Kalonga</string>
     <string name="yellow_star">Yellow Star</string>
-    <string name="bio">\n hello m name is Jonathan kalonga
-        \n\nI a\'m an software developer and i love programming
+    <string name="bio">\nHello my name is Jonathan KALONGA
+        \n\nI a\'m an software developer and i love programming,
         \n\nI love kotlin and java language.
         \n\nbut i can do python,c and same other.
         \n\nI love android, and i like to be a best android dev in my country
@@ -15,4 +15,5 @@
         \n\n thanx
 
     </string>
+    <string name="what_is_your_nickName">What is your nickname ?</string>
 </resources>
