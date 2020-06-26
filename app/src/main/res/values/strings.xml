@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Kotlin_Android</string>
     <string name="name">Jonathan Kalonga</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio">\n hello m name is Jonathan kalonga
+        \n\nI a\'m an software developer and i love programming
+        \n\nI love kotlin and java language.
+        \n\nbut i can do python,c and same other.
+        \n\nI love android, and i like to be a best android dev in my country
+        \n\nI\'m congolaise and i love my country brcause i think that we are the future of africa
+        \n\nI want to chare my knowledge with many people on android and kotlin and to share
+        experiance to building and android application
+        \n\n my mail is: jokalmwamba@gmail.com.
+        follow me on twetter to: https://twitter.com/JonathanKalong3.
+        \n\n thanx
+
+    </string>
 </resources>
