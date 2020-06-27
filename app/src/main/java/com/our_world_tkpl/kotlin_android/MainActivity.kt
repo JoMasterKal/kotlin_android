@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 //        findViewById<Button>(R.id.done_btn).setOnClickListener {
 //            addNickname(it)
 //        }
+        binding.myName = myName
         binding.doneBtn.setOnClickListener {
             addNickname(it)
         }
@@ -36,7 +37,9 @@ class MainActivity : AppCompatActivity() {
 //        val nickNameTextView = findViewById<TextView>(R.id.nickname_text)
 
         binding.apply {
-            nicknameText.text = binding.nickNameEdit.text
+//            nicknameText.text = binding.nickNameEdit.text
+            myName?.nickname = nickNameEdit.text.toString()
+            invalidateAll()
             nickNameEdit.visibility = View.GONE
             view.visibility = View.GONE
             nicknameText.visibility = View.VISIBLE
