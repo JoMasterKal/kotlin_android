@@ -3,7 +3,6 @@ package com.our_world_tkpl.materialdesign
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.shr_main_activity.*
 
 class MainActivity : AppCompatActivity(),NavigationHost {
 
