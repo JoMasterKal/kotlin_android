@@ -1,4 +1,4 @@
-package com.google.codelabs.mdc.kotlin.shrine.staggeredgridlayout
+package com.our_world_tkpl.materialdesign.staggeredgridlayout
 
 import android.view.View
 import android.widget.TextView
@@ -9,7 +9,7 @@ import com.our_world_tkpl.materialdesign.R
 
 class StaggeredProductCardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    var productImage: NetworkImageView = itemView.findViewById(R.id.product_image)
-    var productTitle: TextView = itemView.findViewById(R.id.product_title)
-    var productPrice: TextView = itemView.findViewById(R.id.product_price)
+//    var productImage: NetworkImageView = itemView.findViewById(R.id.product_image)
+//    var productTitle: TextView = itemView.findViewById(R.id.product_title)
+//    var productPrice: TextView = itemView.findViewById(R.id.product_price)
 }

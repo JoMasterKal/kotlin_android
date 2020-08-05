@@ -1,4 +1,4 @@
-package com.google.codelabs.mdc.kotlin.shrine.staggeredgridlayout
+package com.our_world_tkpl.materialdesign.staggeredgridlayout
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -33,9 +33,9 @@ class StaggeredProductCardRecyclerViewAdapter(private val productList: List<Prod
     override fun onBindViewHolder(holder: StaggeredProductCardViewHolder, position: Int) {
         if (productList != null && position < productList.size) {
             val product = productList[position]
-            holder.productTitle.text = product.title
-            holder.productPrice.text = product.price
-            ImageRequester.setImageFromUrl(holder.productImage, product.url)
+//            holder.productTitle.text = product.title
+//            holder.productPrice.text = product.price
+//            ImageRequester.setImageFromUrl(holder.productImage, product.url)
         }
     }
 
