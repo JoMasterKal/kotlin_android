@@ -6,9 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.core.app.ActivityCompat
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationRequest
-import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.*
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -52,13 +50,34 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             // 2
             requestLocationPermissions()
         } else {
-
+            if (locationRequest == null) {
+                locationRequest = LocationRequest.create()
+                locationRequest?.let { locationRequest ->
+                    // 1
+                    locationRequest.priority =
+                        LocationRequest.PRIORITY_HIGH_ACCURACY
+                    // 2
+                    locationRequest.interval = 5000
+                    // 3
+                    locationRequest.fastestInterval = 1000
+                    // 4
+                    val locationCallback = object : LocationCallback() {
+                        override fun onLocationResult(locationResult: LocationResult?) {
+                            getCurrentLocation()
+                        }
+                    }
+                    // 5
+                    fusedLocationClient.requestLocationUpdates(locationRequest,
+                        locationCallback, null)
+                }
+            }
             // 3
             fusedLocationClient.lastLocation.addOnCompleteListener {
                 if (it.result != null) {
                     // 4
                     val latLng = LatLng(it.result!!.latitude, it.result!!.longitude)
                     // 5
+                    mMap.clear()
                     mMap.addMarker(MarkerOptions().position(latLng)
                         .title("You are here!"))
                     // 6
